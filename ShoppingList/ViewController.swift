@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  ShoppingList
 //
-//  Created by student on 2016-02-26.
-//  Copyright © 2016 student. All rights reserved.
+//  Created by Justin Lucas on 2016-02-26.
+//  Copyright © 2016 Justin Lucas. All rights reserved.
 //
 
 import UIKit
