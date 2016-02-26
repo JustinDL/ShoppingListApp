@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ike-1T-oNq">
-                                <rect key="frame" x="20" y="154" width="247" height="30"/>
+                                <rect key="frame" x="20" y="155" width="247" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -67,20 +67,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="14p-ff-5W1">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="14p-ff-5W1">
                                 <rect key="frame" x="486" y="156" width="94" height="29"/>
+                                <connections>
+                                    <action selector="step1:" destination="BYZ-38-t0r" eventType="valueChanged" id="dEG-61-AQx"/>
+                                    <action selector="stepper1:" destination="BYZ-38-t0r" eventType="valueChanged" id="WLu-ge-dfP"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UPq-Sh-XnF">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UPq-Sh-XnF">
                                 <rect key="frame" x="486" y="286" width="94" height="29"/>
+                                <connections>
+                                    <action selector="step3:" destination="BYZ-38-t0r" eventType="valueChanged" id="OQ6-S8-R4S"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dRL-aF-zGi">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dRL-aF-zGi">
                                 <rect key="frame" x="486" y="351" width="94" height="29"/>
+                                <connections>
+                                    <action selector="step4:" destination="BYZ-38-t0r" eventType="valueChanged" id="yZC-ba-sch"/>
+                                </connections>
                             </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="OWv-90-aSD">
-                                <rect key="frame" x="486" y="416" width="94" height="29"/>
-                            </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="esr-Ji-SSc">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="esr-Ji-SSc">
                                 <rect key="frame" x="486" y="221" width="94" height="29"/>
+                                <connections>
+                                    <action selector="step2:" destination="BYZ-38-t0r" eventType="valueChanged" id="wbY-X9-1Pc"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3P-gQ-xLN">
                                 <rect key="frame" x="380" y="407" width="54" height="47"/>
@@ -112,7 +122,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-G5-lld">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-G5-lld" customClass="CancelButton">
                                 <rect key="frame" x="380" y="495" width="200" height="85"/>
                                 <color key="backgroundColor" red="0.66710978403141363" green="0.66710978403141363" blue="0.66710978403141363" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Cancel">
@@ -120,9 +130,28 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="OWv-90-aSD">
+                                <rect key="frame" x="486" y="416" width="94" height="29"/>
+                                <connections>
+                                    <action selector="step5:" destination="BYZ-38-t0r" eventType="valueChanged" id="EHM-5h-r4M"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="CancelButton" destination="ghL-G5-lld" id="B2d-EV-gQm"/>
+                        <outlet property="label1" destination="ike-1T-oNq" id="ECd-4K-cmc"/>
+                        <outlet property="label2" destination="s7h-rj-ir2" id="e9u-lA-pIH"/>
+                        <outlet property="label3" destination="2hq-vs-7ds" id="guu-pL-BAV"/>
+                        <outlet property="label4" destination="Jba-xq-nKk" id="OAB-02-IvI"/>
+                        <outlet property="label5" destination="0WC-af-bbo" id="s97-fA-cT9"/>
+                        <outlet property="stepper1" destination="14p-ff-5W1" id="dcQ-8K-kNJ"/>
+                        <outlet property="stepper2" destination="esr-Ji-SSc" id="eMc-UJ-yCM"/>
+                        <outlet property="stepper3" destination="UPq-Sh-XnF" id="Ydo-Um-Bly"/>
+                        <outlet property="stepper4" destination="dRL-aF-zGi" id="T3D-1N-gu3"/>
+                        <outlet property="stepper5" destination="OWv-90-aSD" id="1a0-J9-eD9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
